@@ -16,3 +16,37 @@ Then it will run at [`localhost:3000`](http://localhost:3000)
 
 ## Usage
 It can be used with other project by simply included RCTree.js file and provide the variable to render as the `data` property (also don't forget install rc-tree package and check the css file import path).
+
+```JavaScript
+import RCTree from "/path to RCTRee.js";
+
+let data = [
+    {
+      name: 'Mia/Folder1/Note1',
+      description: 'You are inside Mia/Folder1/Note1',
+      id: 'id-Mia/Folder1/Note1'
+    },
+    {
+      name: 'Mia/Folder1/Note2',
+      description: 'You are inside Mia/Folder1/Note2',
+      id: 'id-Mia/Folder1/Note2'
+    },
+    {
+      name: 'Mia',
+      description: 'You are inside Mia',
+      id: 'id-Mia'
+    },
+    {
+      name: 'Mia/ProjectWork/Note1',
+      description: 'You are inside Mia/ProjectWork/Note1',
+      id: 'id-Mia/ProjectWork/Note1'
+    },
+    {
+      name: 'Mia/ProjectWork/Note2',
+      description: 'You are inside Mia/ProjectWork/Note2',
+      id: 'id-Mia/ProjectWork/Note2'
+    }
+  ];
+
+ <RCTree data={data} />
+ ```
